@@ -2,10 +2,12 @@
 #define LISTS_H
 
 /**
- * Data Structures
+ * struct listint_s - singly linked list
  * @n: integer
+ * @next: points to the next node
  *
- * Description: Lists,Tuples
+ * Description: Data structures
+ * for ALX project
  */
 typedef struct listint_s
 {
@@ -13,11 +15,10 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-def print_list_integer(my_list=[]):
-def element_at(my_list, idx):
-def replace_in_list(my_list, idx, element):
-def print_reversed_list_integer(my_list=[]):
-def new_in_list(my_list, idx, element):
-def no_c(my_string):
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+int is_palindrome(listint_t **head);
 
 #endif /* LISTS_H */
